@@ -26,9 +26,12 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
+    width: 100;
+    position: fixed;
+    top: 0;
 }
 
-.navegacion{
+.navegacion-escritorio{
     display: flex;
     gap: 10px;
     align-items: center;
@@ -38,3 +41,41 @@ nav{
     display: flex;
     gap: 10px;
 }
+
+.background-image {
+    width: 1000px;
+    height: 1000px;
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+    /* Imagen de fondo */
+    background-image: url('./landing.jpg');
+    /* Repetir la imagen vertical y horizontalmente */
+    background-repeat: repeat;
+    /* Posición de la imagen */
+    background-position: center;
+    /* Tamaño de la imagen */
+    background-size: cover;
+  }
+
+  .contenedor {
+    margin: 10px auto;
+    position: relative;
+    background-color: lightcyan;
+    height: 1000px;
+    width: 1000px;
+  }
+
+  .subcontenedor {
+    background-color: rgb(49, 49, 235);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @media (min-width: 768px){
+    .navegacion-escritorio {display: flex;
+    }
+    .navegacion-mobile {display: none;
+    }
+  }
